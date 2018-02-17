@@ -1,5 +1,6 @@
 package com.jrdev9.codelabroomword.daos;
 
+import android.arch.lifecycle.LiveData;
 import android.arch.persistence.room.Dao;
 import android.arch.persistence.room.Insert;
 import android.arch.persistence.room.Query;
@@ -18,5 +19,5 @@ public interface WordDao {
     void deleteAll();
 
     @Query("SELECT * from words ORDER BY word ASC")
-    List<Word> getAllWords();
+    LiveData<List<Word>> getAllWords();
 }
