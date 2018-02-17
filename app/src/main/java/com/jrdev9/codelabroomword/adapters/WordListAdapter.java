@@ -42,7 +42,7 @@ public class WordListAdapter extends RecyclerView.Adapter<WordListAdapter.WordVi
         holder.wordItemView.setText(current.getWord());
     }
 
-    void setWords(List<Word> words) {
+    public void setWords(List<Word> words) {
         liveDataAllWords = words;
         notifyDataSetChanged();
     }
