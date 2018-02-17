@@ -1,4 +1,4 @@
-package com.jrdev9.codelabroomword;
+package com.jrdev9.codelabroomword.activities;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -6,6 +6,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 
+import com.jrdev9.codelabroomword.R;
 import com.jrdev9.codelabroomword.adapters.WordListAdapter;
 
 public class MainActivity extends AppCompatActivity {
